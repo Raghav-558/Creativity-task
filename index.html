@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Auto Expo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <section>
+        <div class="logo">Auto Expo</div>
+        <div class="first">
+            <div class="yellow"></div>
+            <div class="black"></div>
+            <div class="content">
+                <div class="title">
+                    <div class="small">Let's</div>
+                    <div class="big"><span>RACE</span></div>
+                </div>
+                <div class="image">
+                    <img src="./assets/images/lamborgini car.png" alt="">
+                </div>
+                <div class="specs">
+                    <span><b>302</b> MPH</span>
+                    <span><b>0-100</b> KMPH</span>
+                    <span><b>350</b> KW</span>
+                    <a href="https://www.autoexpo-themotorshow.in/" target="_blank"><button>Discover Now</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        gsap.from(".first .yellow", {
+            y: -1000,
+            duration: 2
+        });
+        gsap.from(".first .black", {
+            y: 1000,
+            duration: 2
+        });
+        gsap.from(".first img", {
+            x: 1000,
+            duration: 2
+        });
+        gsap.from(".first .small", {
+            y: 100,
+            opacity: 0,
+            delay: 2.1,
+        });
+        gsap.from(".first .big span", {
+            y: 100,
+            opacity: 0,
+            stagger: 0.2,
+            delay: 2.1,
+        });
+    </script>
+</body>
+
+</html>
